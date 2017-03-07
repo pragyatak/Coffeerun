@@ -23,8 +23,7 @@
     customerIdArray.forEach(function (id) {
       console.log(this.db.get(id));
     }.bind(this));
-    });
-};
+  };
 
   App.Truck = Truck;
   window.App = App;
