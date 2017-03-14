@@ -4,7 +4,6 @@
 
     // constructors should have their first letter capital
     function DataStore() {
-      console.log('running the DataStore function')
         this.data = {};
     }
 
@@ -21,9 +20,9 @@
         return this.data;
     };
 
-    DataStore.prototype.remove = function(key) {
+    DataStore.prototype.remove = function (key) {
         delete this.data[key];
-    };
+  };
 
     App.DataStore = DataStore;
     window.App = App;
